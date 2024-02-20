@@ -6,16 +6,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PizzaController {
-
+    @Autowired
     private VegPizza v;
   /*  @Autowired
     PizzaController(VegPizza v){
         this.v = v;
     }*/
-    @Autowired
+   /* @Autowired
    public void setPizza(VegPizza v){
         this.v = v;
-    }
+    }*/
 
     public String display(){
         return v.type();
